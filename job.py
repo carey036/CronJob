@@ -4,4 +4,4 @@ with open("urls.txt","r") as f:
     urls = f.readlines()
     f.close()
 for url in urls:
-    print(url+ " " +str(s.get(url).status)+"\n")
+    print(url+ " " +str(s.get(url.replace(" ", "")).status)+"\n")
