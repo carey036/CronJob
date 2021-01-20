@@ -1,2 +1,2 @@
 https://psharea.herokuapp.com/
-http://tpan.herokuapp.com/
+https://tpan.herokuapp.com/
