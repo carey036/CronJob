@@ -22,6 +22,6 @@ jobs:
         python-version: 3.7
     - name: 定时任务
       run: |
-        pip install -r requirements.txt
+        pip install requests
         python3 job.py
         done
