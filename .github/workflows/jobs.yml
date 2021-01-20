@@ -2,13 +2,13 @@ name: 定时任务
 
 on:
   schedule:
-    - cron:  '* * * * *'
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '*/15 * * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-
     steps:
     - uses: actions/checkout@v2
     - name: 初始化Python
