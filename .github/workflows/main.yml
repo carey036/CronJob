@@ -1,4 +1,4 @@
-name: 定时任务
+name: 定时任务2
 
 on:
   schedule:
