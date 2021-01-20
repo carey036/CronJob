@@ -16,13 +16,12 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-    - uses: actions/checkout@v2
     - name: 初始化Python
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
     - name: 定时任务
-      run: |
+      run: 
         pip install -r requirements.txt
         python3 job.py
         done
