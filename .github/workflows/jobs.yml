@@ -1,12 +1,8 @@
 name: 定时任务
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
   schedule:
-    - cron: '26,27 * * * *'
+    - cron: '10,20. * * * *'
   watch:
     types: started
 
@@ -21,7 +17,7 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
-    - name: 定时任务
+    - name: 执行程序
       run: |
         pip install requests
         python3 job.py
