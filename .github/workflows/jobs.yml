@@ -2,9 +2,9 @@ name: 定时任务
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   schedule:
     - cron: 0,20,40 * * * *
   watch:
