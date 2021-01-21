@@ -9,3 +9,6 @@ Cron jobs with python and Github action
 2. 修改url.txt，输入要访问的url地址（每一行输入一个地址，不需要分割符号)
 3. 打开github action，在yml文件中修改要运行的时间
 4. 点击star测试运行
+
+## Issues
+间隔时间不确定，github action是否执行不确定（好像登录了github就不执行了，害羞怕看？）
